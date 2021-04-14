@@ -11,6 +11,11 @@ if [[ -z "${Xray_Path}" ]]; then
 fi
 echo ${Xray_Path}
 
+if [[ -z "${PORT}" ]]; then
+  PORT="80"
+fi
+echo ${PORT}
+
 if [[ -z "${UUID}" ]]; then
   UUID="5c301bb8-6c77-41a0-a606-4ba11bbab084"
 fi
